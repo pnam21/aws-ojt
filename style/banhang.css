@@ -1,0 +1,48 @@
+.banhang {
+    width: 60%;
+    margin: 50px auto;
+}
+
+table tr:nth-child(2n) {
+    background-image: linear-gradient(rgb(216, 230, 213), pink);
+}
+
+table td:nth-child(2n) {
+    background-color: white !important;
+}
+
+.hang {
+    width: 200px;
+}
+
+.hang input {
+    width: 96%;
+}
+
+.banhang select {
+    padding: 5px 10px;
+    margin: 15px;
+}
+td {
+    text-align: center;
+}
+.tong {
+    height: 30px;
+    margin-top: 20px;
+    border: 2px solid cyan;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(70deg,#809999,#c87fa5,#eadb4d,#aab4b8);
+    background-size: 200%;
+    animation: glow 16s linear infinite;
+}
+@keyframes glow {
+    0%{
+        background-position: 0%;
+    } 
+    100% {
+        background-position: 700%;
+    }
+}
