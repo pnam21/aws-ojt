@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/noibat.css">
+    <link rel="stylesheet" href="../style/tintuc.css">
+    <link rel="stylesheet" href="../style/lienhe.css">
+    <link rel="shortcut icon" href="http://abctech.vn/wp-content/uploads/2017/06/logo-nen-xanh.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../style/banhang.css">
+</head>
+
+<body onload="allone(false)">
+    
+    <div  class="container">
+        <div class="header">
+            <ul>
+                <li class="header-one">
+                    <i class='bx bx-phone'></i>
+                    <a href="">1900 6756</a>
+                </li>
+                <li class="header-two">
+                    <a href="">Thứ 2-Chủ nhật: 9:00-18:00</a>
+                </li>
+                <li class="header-three">
+                    <a href="./dangky.html">Đăng ký</a>
+                </li>
+                <li class="header-four">
+                    <a href="">Đăng nhập</a>
+                    <i class='bx bx-search'></i>
+                    <i class='bx bxl-shopify'></i>
+                </li>
+            </ul>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="../index.html">TRANH CHỦ</a>
+                </li>
+                <li>
+                    <a href="../html/sale.html">SẢN PHẢM SALE</a>
+                </li>
+                <li class="nav_big">
+                    <a class="nav-one" href="../html/noibat.html">THỰC ĐƠN</a>
+                </li>
+                <li>
+                    <a class="logo" href="../index.html"><img src="../images/logo.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="../html/tintuc.html">TIN TỨC</a>
+                </li>
+                <li>
+                    <a href="../html/lienhe.html">ĐĂNG KÝ SINH VIÊN</a>
+                </li>
+                <li>
+                    <a href="./banhang.html">BÁN HÀNG</a>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div>
+                <img src="../images/pizza.png" alt="">
+                <a href="">Pizza</a>
+            </div>
+            <div>
+                <img src="../images/menu_icon_2.png" alt="">
+                <a href="">Burger</a>
+            </div>
+            <div>
+                <img src="../images/menu_icon_3.png" alt="">
+                <a href="">Đồ uống</a>
+            </div>
+            <div>
+                <img src="../images/menu_icon_4.png" alt="">
+                <a href="">Trà sữa</a>
+            </div>
+            <div>
+                <img src="../images/menu_icon_5.png" alt="">
+                <a href="">Khoai chiên</a>
+            </div>
+            <div>
+                <img src="../images/menu_icon_6.png" alt="">
+                <a href="">Hoa quả</a>
+            </div>
+        </div>
+        <div class="banner__meat" id="slidershowone">
+            <h2>SẢN PHẨM NỔI BẬT</h2>
+            <P>Trang chủ / Sản phẩm nổi bật </P>
+            <div class="text">1 / 4</div>
+        </div>
+        <a class="prev" onclick="truoc()">❮</a>
+        <a class="next" onclick="sau()">❯</a>
+        <div class="banhang">
+            <table border="1">
+                <caption>
+                    <h1>Bán hàng</h1>
+                </caption>
+                <caption>
+                    <select onclick="giaban()" id="chongia">
+                        <option value="0">Mức giá</option>
+                        <option value="1">Dưới 100</option>
+                        <option value="2">Từ 100 đến 500</option>
+                        <option value="3">Trên 500</option>
+                    </select>
+                </caption>
+                <tr>
+                    <td><input type="checkbox" value="0" onclick="allone(this)" id="tatca"></td>
+                    <td class="hang">Hàng hóa</td>
+                    <td class="hang">Đơn giá</td>
+                    <td class="hang">Số lượng</td>
+                    <td class="hang">Thành tiền</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="kiemtranut(0)" value="1" name="hang"></td>
+                    <td class="hang">iPhone 9</td>
+                    <td class="gia">700</td>
+                    <td><input class="soluong" onchange="tinhtong()" type="number" step="1" min="0"></td>
+                    <td class="thanhtien">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="kiemtranut(1)" value="1" name="hang"></td>
+                    <td class="hang">Samsung</td>
+                    <td class="gia">400</td>
+                    <td><input class="soluong" onchange="tinhtong()" type="number" step="1" min="0"></td>
+                    <td class="thanhtien">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="kiemtranut(2)" value="1" name="hang"></td>
+                    <td class="hang">Samsung</td>
+                    <td class="gia">400</td>
+                    <td><input class="soluong" onchange="tinhtong()" type="number" step="1" min="0"></td>
+                    <td class="thanhtien">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="kiemtranut(3)" value="1" name="hang"></td>
+                    <td class="hang">Nokia</td>
+                    <td class="gia">100</td>
+                    <td><input class="soluong" onchange="tinhtong()" type="number" step="1" min="0"></td>
+                    <td class="thanhtien">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="kiemtranut(4)" value="1" name="hang"></td>
+                    <td class="hang">Sony Xperia</td>
+                    <td class="gia">450</td>
+                    <td><input class="soluong" onchange="tinhtong()" type="number" step="1" min="0"></td>
+                    <td class="thanhtien"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="kiemtranut(5)" value="1" name="hang"></td>
+                    <td class="hang">Samsung</td>
+                    <td class="gia">180</td>
+                    <td><input class="soluong" onchange="tinhtong()" type="number" step="1" min="0"></td>
+                    <td class="thanhtien">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="kiemtranut(6)" value="1" name="hang"></td>
+                    <td class="hang">Oppo</td>
+                    <td class="gia">600</td>
+                    <td><input class="soluong" onchange="tinhtong()" type="number" step="1" min="0"></td>
+                    <td class="thanhtien">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="1" onclick="kiemtranut(7)" name="hang"></td>
+                    <td class="hang">bPhone</td>
+                    <td class="gia">90</td>
+                    <td><input class="soluong" onchange="tinhtong()" type="number" step="1" min="0"></td>
+                    <td class="thanhtien">0</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="tong">Tổng</td>
+                    <td id="tongtien">0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <div class="subfooter__one">
+                <div class="footer__one">
+                    <h4>VỀ CHÚNG TÔI</h4>
+                    <p>Chúng tôi chuyên cung cấp các sản phẩm thực phẩm sạch, an toàn cho sức khoẻ người tiêu dùng</p>
+                    <p><i class='bx bxs-location-plus'></i>Ladeco Building, 266 Doi Can Street, Hà Nội, Vietnam</p>
+                    <a href=""><i class='bx bxs-phone'></i>1900 6750</a><br>
+                    <a href=""><i class='bx bx-mail-send'></i>support@sapo.vn</a>
+                    <iframe
+                        src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhlcapaeh.nethost-5011.000web.xyz%2F&width=450&layout=standard&action=like&size=large&share=true&height=35&appId=529481385081831"
+                        width="450" height="35" style="border:none;overflow:hidden;padding: 20px;" scrolling="no"
+                        frameborder="0" allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="footer__two">
+                    <h4>LIÊN KẾT NHANH</h4>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="../html/sale.html">Sản phẩm sale</a>
+                        </li>
+                        <li>
+                            <a href="../html/noibat.html">Thực đơn</a>
+                        </li>
+                        <li>
+                            <a href="../html/tintuc.html">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="../html/lienhe.html">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="./banhang.html">BÁN HÀNG</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__two ">
+                    <h4>HƯỚNG DẪN NHANH
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="../html/index.html" ">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href=" ../html/sale.html ">Sản phẩm sale</a>
+                        </li>
+                        <li>
+                            <a href=" ../html/noibat.html ">Thực đơn</a>
+                        </li>
+                        <li>
+                            <a href=" ../html/tintuc.html ">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href=" ../html/lienhe.html ">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href=" # ">Nhựng quyền</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src=" ../js/banhang.js"></script>
+        <script src="../js/noibat.js"></script>
+        <script>loading();</script>
+                </div>
+</body>
+
+</html>
