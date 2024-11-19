@@ -300,20 +300,7 @@ del {
     top: 6px
 }
 
-.footer__two ul li a {
-    color: #959595;
-    text-decoration: none;
-}
 
-.footer__two ul li {
-    padding: 10px 0;
-}
-
-.footer__two ul li a:hover {
-    color: red;
-    text-decoration: underline;
-    transition: all 0.5s ease-in-out;
-}
 
 .footer__one>a {
     color: #959595;
@@ -331,19 +318,13 @@ del {
     flex: 1;
 }
 
-.footer__two {
-    flex: 1;
-}
 
 .footer__one>h4 {
     color: white;
     font-size: large;
 }
 
-.footer__two>h4 {
-    color: white;
-    font-size: large;
-}
+
 
 body::-webkit-scrollbar {
     width: 20px;
@@ -431,7 +412,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 #slidershow {
     vertical-align: middle;
-    height: 440px;
+    height: 800px;
 }
 
 @media only screen and (max-width: 300px) {

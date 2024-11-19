@@ -1,5 +1,5 @@
 var img = [];
-var songuyen = 2;
+var int = 2;
 function loading() {
   for (let i = 1; i <= 4; i++) {
     img[i] = "./images/banner" + i + ".png";
@@ -10,27 +10,27 @@ function loading() {
 }
 function truoc() {
   var anh = document.getElementById("slidershow")
-  anh.src = img[songuyen];
-  document.querySelector(".text").innerHTML = songuyen+" / 4";
-  if (songuyen == 1) {
-    songuyen = img.length;
+  anh.src = img[int];
+  document.querySelector(".text").innerHTML = int+" / 4";
+  if (int == 1) {
+    int = img.length;
   }
-  songuyen--
-  console.log(songuyen)
+  int--
+  console.log(int)
 }
 function sau() {
   var anh = document.getElementById("slidershow");
-  if (songuyen == img.length) {
-    songuyen = 1;
+  if (int == img.length) {
+    int = 1;
   }
-  anh.src = img[songuyen];
-  document.querySelector(".text").innerHTML = songuyen+" / 4";
-  songuyen++
+  anh.src = img[int];
+  document.querySelector(".text").innerHTML = int+" / 4";
+  int++
  
 }
 
 function bam(so) {
-  songuyen=so;
+  int=so;
   var anh = document.getElementById("slidershow");
   document.querySelector(".text").innerHTML = so+" / 4";
   anh.src = img[so];
